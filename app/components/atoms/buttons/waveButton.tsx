@@ -9,9 +9,7 @@ const WaveButton = ({ articleTitle }: IButton) => {
     <div className="wave">
       <h2 className="wave-h2">{articleTitle}</h2>
       <button className="wave-button">
-        <a href="#" className="wave-button-text">
-          Click Me!
-        </a>
+        <span>Click Me!</span>
       </button>
     </div>
   );
