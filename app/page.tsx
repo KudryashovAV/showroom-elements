@@ -4,6 +4,7 @@ import OceanButton from "./components/atoms/buttons/oceanButton";
 import RainButton from "./components/atoms/buttons/rainButton";
 import SandButton from "./components/atoms/buttons/sandButton";
 import WindButton from "./components/atoms/buttons/windButton";
+import Card1 from "./components/cells/itemCards/card1";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <FireButton articleTitle="Fire" />
       <RainButton articleTitle="Rain" />
       <WindButton articleTitle="Wind" />
+      <Card1 />
     </>
   );
 }

@@ -1,0 +1,97 @@
+.card1-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+}
+.card1 {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ffce00;
+    /*This declaration allows the cutting on the card*/
+    transform: skewY(345deg) !important;
+    transition: 0.5s;
+  }
+  &:hover::before {
+    top: -60%;
+    /*This declaration allows the cutting on the card*/
+    transform: skewY(390deg) !important;
+  }
+  &::after {
+    content: "CORSAIR";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6.5em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .card1-headphone {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    & .card1-image {
+      max-width: 100%;
+      transition: 0.5s;
+    }
+  }
+  &:hover {
+    .card1-headphone .card1-image {
+      max-width: 70%;
+    }
+    .card1-infos .card1-buy {
+      top: 10px;
+      opacity: 1;
+    }
+  }
+  & .card1-infos {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    & .card1-title {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    & .card1-price {
+      font-size: 24px;
+      color: #ffce00;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    & .card1-buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #ffce00;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s;
+    }
+  }
+}
