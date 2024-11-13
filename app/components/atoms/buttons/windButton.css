@@ -1,0 +1,129 @@
+.wind-h2 {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.wind {
+  align-items: center;
+  background: #ac7ee5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+.wind-button {
+  background: transparent;
+  border: 3px solid #d3b7f7;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 1.5em;
+  font-weight: 400;
+  height: 3em;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  outline: none;
+  padding: 1rem 3rem 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: border 0.5s ease-out;
+  transition-delay: 0.8s;
+  width: 11em;
+  -webkit-transition: border 0.5s ease-out;
+}
+.wind-button::before,
+.wind-button::after {
+  border-radius: 50%;
+  bottom: 0;
+  content: "CLICK ME!";
+  display: block;
+  height: 22em;
+  left: -5.5em;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: box-shadow 0.5s ease-out;
+  transition-delay: 0.75s;
+  width: 22em;
+  z-index: 1;
+  -webkit-transition: box-shadow 0.5s ease-out;
+  -webkit-transition-delay: 0.75s;
+}
+.wind-button::after {
+  transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+}
+.wind-button:hover {
+  animation: witch-word-color 1.5s ease;
+  border-color: #8460af;
+  color: #fff;
+  transition: border 0.2s ease;
+  -webkit-transition: border 0.2s ease;
+}
+.wind-button:hover::before {
+  box-shadow: inset 0 0 0 11em #b657e5;
+  transition-delay: 0.05s;
+}
+.wind-button:hover::after {
+  box-shadow: inset 0 0 0 11em #8460af;
+  transition-delay: 0.5s;
+}
+.wind-button-text {
+  left: 61px;
+  position: absolute;
+  text-decoration: none;
+  top: 17px;
+  z-index: 2;
+}
+
+@-moz-keyframes witch-word-color {
+  0% {
+    color: #d3b7f7;
+  }
+  50% {
+    color: #50514f;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-webkit-keyframes witch-word-color {
+  0% {
+    color: #d3b7f7;
+  }
+  50% {
+    color: #50514f;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-o-keyframes witch-word-color {
+  0% {
+    color: #d3b7f7;
+  }
+  50% {
+    color: #50514f;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@keyframes witch-word-color {
+  0% {
+    color: #d3b7f7;
+  }
+  50% {
+    color: #50514f;
+  }
+  100% {
+    color: #fff;
+  }
+}

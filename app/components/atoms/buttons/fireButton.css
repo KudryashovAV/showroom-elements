@@ -1,0 +1,41 @@
+.fire-h2 {
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.fire {
+  align-items: center;
+  background: #ed6a5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+.fire-button {
+  background: radial-gradient(circle, #ed412a 0.25em, transparent 0.25em) center/1.2em 1.2em;
+  border-radius: 5px;
+  border: 3px solid #ed412a;
+  color: #8e1812;
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  outline: none;
+  padding: 1rem 3rem 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.fire-button:hover {
+  background: radial-gradient(circle, #ed412a 0.25em, transparent 0.25em) center/0.1em 0.1em;
+  color: #fff;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}

@@ -1,4 +1,4 @@
-.leaf-h2 {
+.sand-h2 {
   color: #fff;
   font-family: "Raleway";
   font-weight: 600;
@@ -6,20 +6,19 @@
   margin-bottom: 5px;
   text-align: center;
 }
-.leaf {
+.sand {
   align-items: center;
-  background: #78c98d;
-  color: #78c98d;
+  background: #e5d272;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  display: flex;
   height: 50vh;
   width: 100%;
 }
-.leaf-button {
-  background: #d0f9c7;
+.sand-button {
+  background: #f6f7c5;
   border: none;
-  color: #78c98d;
+  color: #e5d272;
   cursor: pointer;
   font-family: "Lato";
   font-size: 1.5em;
@@ -30,33 +29,28 @@
   padding: 1rem 3rem 1rem 3rem;
   position: relative;
   text-transform: uppercase;
-  transition: all 0.7s ease;
-  -webkit-transition: all 0.7s ease;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
-.leaf-button:hover {
+.sand-button:hover {
   background: transparent;
-  color: #d0f9c7;
-}
-.leaf-button:hover:before,
-.leaf-button:hover:after {
+  color: #f6f7c5;
   transition: all 0.7s ease;
-  width: 100%;
   -webkit-transition: all 0.7s ease;
 }
-.leaf-button:before,
-.leaf-button:after {
-  background: #d0f9c7;
+.sand-button:hover:after {
+  left: 0;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.sand-button:after {
+  background: #f6f7c5;
+  bottom: 0;
   content: "";
   height: 3px;
-  left: 0px;
-  position: absolute;
-  top: 0;
-  transition: all 0.4s ease;
-  width: 0px;
-}
-.leaf-button:after {
-  bottom: 0;
   left: inherit;
+  position: absolute;
   right: 0;
-  top: inherit;
+  transition: all 0.3s ease;
+  width: 0;
 }

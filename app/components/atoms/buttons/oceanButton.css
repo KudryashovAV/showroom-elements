@@ -1,68 +1,54 @@
-.ocean-btn-bg {
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.ocean-bg-1 {
-  background: #6ab1c9;
-}
-.ocean-button {
-  color: #c7f8f9;
-  background: transparent;
-  border: 3px solid #c7f8f9;
-  border-radius: 5px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.ocean-button a {
-  color: #c7f8f9;
-}
-.ocean-button:hover {
-  background: #c7f8f9;
-  color: #6ab1c9;
-  border: 3px solid #6ab1c9;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.ocean-button:hover > a {
-  color: #6ab1c9;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.ocean-button:active {
-  -webkit-transform: translate(5px, 5px);
-  transform: translate(5px, 5px);
-}
-.ocean-btn {
-  margin: 0 auto 30px auto;
-  display: block;
-}
 .ocean-h2 {
+  color: #fff;
   font-family: "Raleway";
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 5px;
-  color: #fff;
   text-align: center;
 }
+.ocean {
+  align-items: center;
+  background: #6ab1c9;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+
 .ocean-button {
+  background: transparent;
+  border: 3px solid #c7f8f9;
+  border-radius: 5px;
+  color: #c7f8f9;
   cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  color: #fff;
-  position: relative;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  padding: 1rem 3rem 1rem 3rem;
-  text-transform: uppercase;
   font-family: "Lato";
   font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  outline: none;
+  padding: 1rem 3rem 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  transform: translate(0, 0);
+  -webkit-transition: all 0.5s ease;
+  -webkit-transform: translate(0, 0);
 }
-.ocean-button a {
-  text-decoration: none;
+.ocean-button:hover {
+  background: #c7f8f9;
+  border: 3px solid #6ab1c9;
+  color: #6ab1c9;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+}
+.ocean-button:hover > a {
+  color: #6ab1c9;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+}
+.ocean-button:active {
+  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
 }
