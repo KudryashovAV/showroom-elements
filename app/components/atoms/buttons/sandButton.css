@@ -18,6 +18,7 @@
 .sand-button {
   background: #f6f7c5;
   border: none;
+  border-radius: 18px;
   color: #e5d272;
   cursor: pointer;
   font-family: "Lato";

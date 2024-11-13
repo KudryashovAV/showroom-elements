@@ -19,6 +19,7 @@
 .leaf-button {
   background: #d0f9c7;
   border: none;
+  border-radius: 18px;
   color: #78c98d;
   cursor: pointer;
   font-family: "Lato";
