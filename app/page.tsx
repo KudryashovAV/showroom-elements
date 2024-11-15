@@ -16,6 +16,7 @@ import Card3 from "./components/cells/itemCards/card3";
 export default function Home() {
   return (
     <>
+    <span>11 November 2024</span>
       <OceanButton articleTitle="Ocean" />
       <LeafButton articleTitle="Leaf" />
       <SandButton articleTitle="Sand" />
