@@ -1,0 +1,22 @@
+.background2 {
+  animation: bganimation 25s infinite;
+  background: radial-gradient(ellipse at center, rgba(255, 2, 2, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
+    radial-gradient(ellipse at center, rgba(213, 16, 78, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
+    radial-gradient(ellipse at center, rgba(213, 16, 78, 0.1) 0%, rgba(0, 0, 0, 0) 70%) #fbfbfd;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+  50% {
+    background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+  }
+  100% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+}
